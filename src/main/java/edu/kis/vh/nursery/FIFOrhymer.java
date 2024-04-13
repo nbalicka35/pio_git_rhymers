@@ -5,16 +5,16 @@ public class FIFOrhymer extends defaultRhymer {
     public defaultRhymer temp = new defaultRhymer();
     
     @Override
-    public int countOut() {
+    public int getPenultimateNumber() {
         while (!check())
             
-        temp.countIn(super.countOut());
+        temp.countIn(super.getPenultimateNumber());
         
-        int ret = temp.countOut();
+        int ret = temp.getPenultimateNumber();
         
         while (!temp.check())
             
-        countIn(temp.countOut());
+        countIn(temp.getPenultimateNumber());
         
         return ret;
     }

@@ -19,13 +19,13 @@ public class defaultRhymer {
                 return total == 11;
             }
         
-                protected int getNumber() {
+                protected int getLastNumber() {
                     if (check())
                         return -1;
                     return NUMBERS[total];
                 }
             
-                    public int countOut() {
+                    public int getPenultimateNumber() {
                         if (check())
                             return -1;
                         return NUMBERS[total--];

@@ -9,7 +9,7 @@ public class HanoiRhymer extends defaultRhymer {
     }
 
     public void countIn(int in) {
-        if (!check() && in > getNumber())
+        if (!check() && in > getLastNumber())
             totalRejected++;
         else
             super.countIn(in);

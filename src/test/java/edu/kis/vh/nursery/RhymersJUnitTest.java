@@ -11,7 +11,7 @@ public class RhymersJUnitTest {
         int testValue = 4;
         rhymer.countIn(testValue);
 
-        int result = rhymer.getNumber();
+        int result = rhymer.getLastNumber();
         Assert.assertEquals(testValue, result);
     }
 
@@ -46,15 +46,15 @@ public class RhymersJUnitTest {
         defaultRhymer rhymer = new defaultRhymer();
         final int EMPTY_STACK_VALUE = -1;
 
-        int result = rhymer.getNumber();
+        int result = rhymer.getLastNumber();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
         int testValue = 4;
         rhymer.countIn(testValue);
 
-        result = rhymer.getNumber();
+        result = rhymer.getLastNumber();
         Assert.assertEquals(testValue, result);
-        result = rhymer.getNumber();
+        result = rhymer.getLastNumber();
         Assert.assertEquals(testValue, result);
     }
 
@@ -63,15 +63,15 @@ public class RhymersJUnitTest {
         defaultRhymer rhymer = new defaultRhymer();
         final int EMPTY_STACK_VALUE = -1;
 
-        int result = rhymer.countOut();
+        int result = rhymer.getPenultimateNumber();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
         int testValue = 4;
         rhymer.countIn(testValue);
 
-        result = rhymer.countOut();
+        result = rhymer.getPenultimateNumber();
         Assert.assertEquals(testValue, result);
-        result = rhymer.countOut();
+        result = rhymer.getPenultimateNumber();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
     }
 
