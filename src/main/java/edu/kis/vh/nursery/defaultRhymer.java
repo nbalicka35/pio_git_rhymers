@@ -11,7 +11,7 @@ public class defaultRhymer {
             NUMBERS[++total] = in;
     }
 
-        public boolean callCheck() {
+        public boolean check() {
             return total == -1;
         }
         
@@ -19,14 +19,14 @@ public class defaultRhymer {
                 return total == 11;
             }
         
-                protected int peekaboo() {
-                    if (callCheck())
+                protected int getNumber() {
+                    if (check())
                         return -1;
                     return NUMBERS[total];
                 }
             
                     public int countOut() {
-                        if (callCheck())
+                        if (check())
                             return -1;
                         return NUMBERS[total--];
                     }
