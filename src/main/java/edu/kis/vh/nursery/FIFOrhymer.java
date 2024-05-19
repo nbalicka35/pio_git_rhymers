@@ -2,10 +2,10 @@ package edu.kis.vh.nursery;
 
 public class FIFOrhymer extends defaultRhymer {
 
-    public defaultRhymer temp = new defaultRhymer();
+    private final defaultRhymer temp = new defaultRhymer();
     
     @Override
-    public int getPenultimateNumber() {
+    protected int getPenultimateNumber() {
         while (!check())
             
         temp.countIn(super.getPenultimateNumber());
@@ -17,5 +17,9 @@ public class FIFOrhymer extends defaultRhymer {
         countIn(temp.getPenultimateNumber());
         
         return ret;
+    }
+
+    public defaultRhymer getTemp() {
+        return temp;
     }
 }
