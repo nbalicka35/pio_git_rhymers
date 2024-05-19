@@ -6,6 +6,10 @@ public class defaultRhymer {
 
     private int total = -1;
 
+    public int getTotal() {
+        return total;
+    }
+
     protected void countIn(int in) {
         if (!isFull())
             NUMBERS[++total] = in;
