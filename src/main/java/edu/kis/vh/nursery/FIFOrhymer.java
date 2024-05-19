@@ -18,4 +18,8 @@ public class FIFOrhymer extends defaultRhymer {
         
         return ret;
     }
+
+    public defaultRhymer getTemp() {
+        return temp;
+    }
 }

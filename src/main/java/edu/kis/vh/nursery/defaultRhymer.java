@@ -35,4 +35,11 @@ public class defaultRhymer {
                         return NUMBERS[total--];
                     }
 
+    public int[] getNUMBERS() {
+        return NUMBERS;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
 }
