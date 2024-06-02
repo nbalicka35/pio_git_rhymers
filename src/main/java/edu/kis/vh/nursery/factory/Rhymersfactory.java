@@ -4,12 +4,17 @@ import edu.kis.vh.nursery.defaultRhymer;
 
     public interface Rhymersfactory {
     
-        public defaultRhymer GetStandardRhymer();
-        
-        public defaultRhymer GetFalseRhymer();
-        
-        public defaultRhymer GetFIFORhymer();
-        
-        public defaultRhymer GetHanoiRhymer();
-        
+        public defaultRhymer getStandardRhymer();
+        // TODO: modifier 'public' needs to be deleted - redundant for interface members
+
+
+        public defaultRhymer getFalseRhymer();
+        // TODO: modifier 'public' needs to be deleted - redundant for interface members
+
+        public defaultRhymer getFIFORhymer();
+        // TODO: modifier 'public' needs to be deleted - redundant for interface members
+
+        public defaultRhymer getHanoiRhymer();
+        // TODO: modifier 'public' needs to be deleted - redundant for interface members
+
     }

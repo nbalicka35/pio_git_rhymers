@@ -7,22 +7,22 @@ import edu.kis.vh.nursery.HanoiRhymer;
 public class DefaultRhymersFactory implements Rhymersfactory {
 
     @Override
-    public defaultRhymer GetStandardRhymer() {
+    public defaultRhymer getStandardRhymer() {
         return new defaultRhymer();
     }
 
     @Override
-    public defaultRhymer GetFalseRhymer() {
+    public defaultRhymer getFalseRhymer() {
         return new defaultRhymer();
     }
 
     @Override
-    public defaultRhymer GetFIFORhymer() {
+    public defaultRhymer getFIFORhymer() {
         return new FIFOrhymer();
     }
 
     @Override
-    public defaultRhymer GetHanoiRhymer() {
+    public defaultRhymer getHanoiRhymer() {
         return new HanoiRhymer();
     }
 
