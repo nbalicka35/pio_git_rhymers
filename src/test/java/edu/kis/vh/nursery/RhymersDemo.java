@@ -10,8 +10,8 @@ class RhymersDemo {
         testRhymers(factory);
     }
         private static void testRhymers (Rhymersfactory factory){
-            defaultRhymer[] rhymers = {factory.GetStandardRhymer(), factory.GetFalseRhymer(),
-                    factory.GetFIFORhymer(), factory.GetHanoiRhymer()};
+            defaultRhymer[] rhymers = {factory.getStandardRhymer(), factory.getFalseRhymer(),
+                    factory.getFIFORhymer(), factory.getHanoiRhymer()};
 
             for (int i = 1; i < 15; i++)
                 for (int j = 0; j < 3; j++)
@@ -26,6 +26,7 @@ class RhymersDemo {
                     System.out.print(rhymers[i].getPenultimateNumber() + "  ");
                 System.out.println();
             }
+            // TODO: Optional, can be replaced with for (DefaultRhymer rhymer : rhymers)
 
             System.out.println("total rejected is "
                     + ((HanoiRhymer) rhymers[3]).RejectedReports());

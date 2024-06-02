@@ -5,6 +5,7 @@ public class IntLinkedList {
     private static final int EMPTY_VALUE = -1;
     private Node last;
     private int i;
+    // TODO: 'i' field needs to be deleted, it's never used
     public void push(int i) {
         if (last == null)
             last = new Node(i);
@@ -20,6 +21,8 @@ public class IntLinkedList {
     public boolean isFull() {
         return false;
     }
+    // TODO: method unused, needs proper implementation
+
     public int top() {
         if (isEmpty())
             return EMPTY_VALUE;
