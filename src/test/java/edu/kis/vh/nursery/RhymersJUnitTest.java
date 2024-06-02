@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RhymersJUnitTest {
-
+    //test launched and ended successfully, process ended with exit code 0
     @Test
     public void testCountIn() {
         defaultRhymer rhymer = new defaultRhymer();
